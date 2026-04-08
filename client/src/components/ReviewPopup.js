@@ -13,7 +13,7 @@ function ReviewPopup({ movie, close }) {
   });
 
   const handleSubmit = async () => {
-    await axios.post("https://movie-backend-yze2.onrender.com/reviews", data);
+    await axios.post("https://movie-backend-yze2.onrender.com/review", data);
     alert("Submitted!");
     close();
   };
