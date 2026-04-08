@@ -7,10 +7,11 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-    host:"localhost",
+    host:"mysql.railway.internal",
     user: "root",
-    password: "root",
-    database: "moviedb"
+    password: "CdLdtFOmUHUgWBXeQNCBQCgAFogZfEax",
+    database: "railway",
+    port: 3306
 });
 
 app.post("/review",(req , res)=>{
