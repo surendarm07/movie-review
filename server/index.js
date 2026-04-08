@@ -15,13 +15,18 @@ const db = mysql.createConnection({
 });
 
 app.post("/review",(req , res)=>{
+    console.log(req.body);
     const {name, phone, movie, rating, city, review } = req.body;
 
     const sql = "Insert into reviews (name, phone, movie, rating, city, review ) values (?,?,?,?,?,?,?)";
 
     db.query(sql,[name, phone, movie, rating, city, review],(err,result)=>{
-        if(err) return res.send(err);
-        res.send("Review Added");    
+        if(err){
+             console.log(err);
+             res.send("Error");
+        }else{
+        res.send("Review Added");
+    }    
     });
 });
 
