@@ -29,6 +29,18 @@ function Home() {
       year: 2025,
       cast: "Vikram prabhu and Anishma anilkumar",
       plot: "A cop escorts a prisoner during a transfer from Vellore prison to Sivagangai court, leading to unexpected interactions between them."
+    },
+    {
+      name:"LIK: Love Insurance Kompany",
+      year: 2026,
+      cast:"SuperStar Pradeep Ranganathan and Krithi Shetty",
+      plot:"A man who believes in old-school love meets Dheema, a woman embracing tech-driven romance. Their growing relationship challenges modern love norms and pits them against Suriyan, a powerful CEO of a love app."
+    },
+    {
+      name:"Jana Nayagan",
+      year: 2026,
+      cast: "Thalapathy Vijay and National Crush Mamitha Biju",
+      plot: "Ideological enemies-one populist, one authoritarian-meet again when a child's fear awakens old conflicts, pulling an ex-cop into a struggle beyond vengeance."
     }
   ];
 
